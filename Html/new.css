@@ -1,0 +1,39 @@
+#mummy{
+	border: 2px solid blue;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	/*-webkit-box-direction:reverse;*/
+	width: 700px;
+}
+
+#kid1{
+	border: 2px solid red;
+	padding: 20px;
+	background-color: green;
+	margin: 10px;
+	-webkit-box-flex:1;
+}
+
+#kid2{
+	border: 2px solid red;
+	padding: 20px;
+	background-color: yellow;
+	margin: 10px;
+	-webkit-box-flex:5;
+}
+
+#kid3{
+	border: 2px solid red;
+	padding: 20px;
+	background-color: orange;
+	margin: 10px;
+	-webkit-box-flex:1;
+}
+
+#kid4{
+	border: 2px solid red;
+	padding: 20px;
+	background-color: blue;
+	margin: 10px;
+	-webkit-box-flex:1;
+}
