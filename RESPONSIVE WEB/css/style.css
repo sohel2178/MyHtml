@@ -1,0 +1,214 @@
+body{
+	font-family: Arial,Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+.button_1{
+	background: #e8491d;
+	height: 38px;
+	border-style: none;
+	color: white;
+	padding:  0px 20px;
+
+}
+
+.dark{
+	padding:15px;
+	background-color: #35424a;
+	color: white;
+}
+
+.button_1:hover{
+	color: #e8491d;
+	background: white;
+	text-transform: uppercase;
+
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.page_title{
+	font-size: 30px;
+}
+
+header{
+	background-color: #35424a;
+	color: white;
+	padding-top: 30px;
+	min-height: 60px;
+	border-bottom: orange 5px solid;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+header li{
+	
+	display: inline;
+	float: left;
+	padding:0px 20px;
+}
+
+header h1{
+	float: left;
+	margin: 0px;
+}
+
+header nav{
+	margin-top: 10px;
+	float: right;
+}
+
+header .highlight, header .current a{
+	color: #e8491d;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+/*Show Case*/
+#showcase{
+	min-height: 400px;
+	background: url("../images/showcase.jpg") no-repeat 0 -400px;
+	color: white;
+	text-align: center;
+}
+
+#showcase h1{
+	font-size: 55px;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	color: blue;
+}
+
+#showcase p{
+	color: red;
+	font-size: 20px;
+}
+
+/* News Letter */
+
+#newsletter{
+	background-color: #35424a;
+	padding: 20px;
+	color: white;
+}
+
+#newsletter h1{
+	float: left;
+}
+
+#newsletter form{
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+	padding: 4px;
+	width: 250px;
+	height: 25px;
+
+}
+
+
+/* Boxes */
+
+#box_section{
+	margin-top: 20px;
+}
+
+#box_section .box:nth-child(even){
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+#box_section .box{
+	float: left;
+	width: 30%;
+	text-align: center;
+	padding: 10px;
+}
+
+#box_section img{
+	width: 90px;
+	height: 90px;
+
+
+}
+
+#main{
+	margin-top: 20px;
+}
+
+
+#sidebar{
+	float: right;
+	width: 30%;
+
+
+}
+
+#main_col{
+	float: left;
+	width: 65%;
+
+}
+
+
+#services{
+
+}
+
+#services li{
+	list-style: none;
+	padding: 20px;
+	border:1px solid #cccccc;
+	background-color: #e6e6e6;
+}
+
+#services li:nth-child(even){
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.quote input,textarea{
+	width: 90%;
+	padding: 7px;
+}
+
+.quote textarea{
+	height: 150px;
+
+}
+
+footer{
+	margin-top: 20px;
+	padding: 20px;
+	color: white;
+	background-color: #e8491d;
+	text-align: center;
+}
