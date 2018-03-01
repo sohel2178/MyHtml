@@ -16,3 +16,12 @@
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
+
+.container{
+	line-height: 1.6em;
+	text-align: center;
+	width: 80%;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 20px;
+}

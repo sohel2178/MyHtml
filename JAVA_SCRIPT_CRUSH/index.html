@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Java Sc ript Test</title>
+	<title>Java Script Test</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 
 	<!-- <script type="text/javascript" src="javascript/main.js"></script> -->
 </head>
-<body>
+<body id="body">
 
 	<div class="header">
-		<h1>Learning Java Script</h1>
+		<h1 id="heading">Learning Java Script</h1>
 		<p>Sohel Ahmed</p>
 	</div>
 
 	<div class="container">
+
+		<button onclick="validateForm()">Click</button>
+
+		<form method="POST" action="" name="myForm" onsubmit="validateForm()">
+			
+			<div>
+				<label>First Name</label>
+				<input type="name" placeholder="First Name" name="firstName" id="firstName">
+			</div>
+
+			<div>
+				<label>Last Name</label>
+				<input type="name" placeholder="Last Name" name="lastName" id="lastName">
+			</div>
+
+			<div>
+				<label>Background</label>
+
+				<select name="background" id="background" onchange="changeBackGround(this)">
+					<option value="red">Red</option>
+					<option value="green">Green</option>
+					<option value="blue">Blue</option>
+				</select>
+			</div>
+
+			<br>
+
+			<input type="submit" value="Submit">
+
+
+		</form>
+
+		<!-- <h3 id="time"></h3>
+
+		<button onclick= "changeText(this)">Click</button>
+
+		<br>
+
+		<button onclick= "changeHeading()">Change Heading</button>
+
+		<br>
+
+		<button onmouseout = "showDate(this)">Show Time</button> -->
+
+<!-- 
+		Dom Element Event
+
+		OnClick
+		OnMouseOver
+		OnMouseOut -->
 		
 	</div>
 
@@ -109,26 +159,168 @@
 
 		//Switch Case
 
-		var fruit="apple";
+		// var fruit="apple";
 
-		switch(fruit){
-			case "banana":
-				alert("I Hate Banana");
-			break;
+		// switch(fruit){
+		// 	case "banana":
+		// 		alert("I Hate Banana");
+		// 	break;
 
-			case "mango":
-				alert("I Love Mango");
-			break;
+		// 	case "mango":
+		// 		alert("I Love Mango");
+		// 	break;
 
-			case "apple":
-				alert("I Hate Apple");
-			break;
+		// 	case "apple":
+		// 		alert("I Hate Apple");
+		// 	break;
 
-			default:
-				alert("I Love All other Fruits");
-			break;
+		// 	default:
+		// 		alert("I Love All other Fruits");
+		// 	break;
 
+		// }
+
+
+		// Working with Objects
+
+		// Literal Objects
+
+		// var person = {
+		// 	firstName : 'Sohel',
+		// 	lastName : 'Ahmed',
+		// 	age : 34,
+
+		// 	children:['Abul','Kabul','Jhontu','Sabul'],
+		// 	// Inside Object There may be another Object
+		// 	address:{
+		// 		city:'Rangpur',
+		// 		village:'Dhumerkuthi',
+		// 		thana:'kaunia',
+		// 		post_code:5440
+		// 	},
+
+		// 	// Here may be a Function
+		// 	fullName: function(){
+		// 		return this.firstName+" "+this.lastName;
+		// 	}
+		// }
+
+		// console.log(person.lastName);
+
+		// person.firstName = "Mokru";
+
+
+		// console.log(person.firstName);
+		// console.log(person.children[3]);
+		// console.log(person.address.post_code);
+		// console.log(person.fullName());
+
+
+
+
+
+		// Object Contructor
+		// var apple = new Object();
+
+		// apple.color = 'red';
+		// apple.shape = 'round';
+
+		// apple.describe = function(){
+		// 	return "An Apple with color "+this.color+" and shape "+this.shape;
+		// }
+
+
+		// console.log(apple.describe());
+
+
+
+
+
+		//Object Constructor Pattern
+
+		function Fruit(name,color,shape){
+			this.name = name;
+			this.color = color;
+			this.shape = shape;
+
+
+			this.describe= function(){
+				return this.name+" with color "+this.color+" and shape "+this.shape;
+			}
 		}
+
+
+		var apple = new Fruit("Apple","Tomato","Round");
+
+
+		console.log(apple.color);
+		console.log(apple.describe());
+
+
+
+		function doClick(){
+			alert("You Click");
+		}
+
+
+		function changeHeading(){
+
+			var heading =document.getElementById('heading');
+
+			if(heading.innerHTML=="Learning Java Script"){
+				heading.innerHTML="You Change Me By Clicking Button";
+			}else{
+				heading.innerHTML="Learning Java Script";
+			}
+			
+		}
+
+
+		function showDate(button){
+
+			var heading =document.getElementById('time');
+
+			if(heading.innerHTML==""){
+				heading.innerHTML= Date();
+				button.innerHTML = "Hide Time";
+			}else{
+				heading.innerHTML="";
+				button.innerHTML = "Show Time";
+			}
+			
+		}
+
+
+		function changeBackGround(x){
+			var heading = document.getElementById('heading');
+
+			heading.style.backgroundColor = x.value;
+			heading.style.color = 'white';
+		}
+
+
+
+
+		function validateForm(){
+			console.log("hhhh");
+			// var firstName = document.forms["myForm"]["firstName"].value;
+			// var lastName = document.forms["myForm"]["lastName"].value;
+
+
+			// if(firstName==null && firstName==""){
+			// 	alert("Required First Name");
+
+			// 	return false;
+
+			// }
+			
+
+			//console.log(firstName);
+			//console.log(lastName);
+		}
+
+
+
 
 		
 
