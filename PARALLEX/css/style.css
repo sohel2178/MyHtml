@@ -1,0 +1,78 @@
+body,html{
+	font-family: "Lato",sans-serif;
+	font-size: 16px;
+	height: 100%;
+	margin: 0;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+.parallax_image_1,.parallax_image_2,.parallax_image_3{
+
+	opacity: 0.7;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+	background-attachment: fixed; /*This will do the trick*/
+
+	/*fixed = parallax
+	scroll = normal*/
+
+}
+
+.parallax_image_1{
+	background-image: url("../images/city_1.png");
+	min-height: 100%;
+}
+
+.parallax_image_2{
+	background-image: url("../images/city_2.jpeg");
+	min-height: 400px;
+}
+
+.parallax_image_3{
+	background-image: url("../images/city_3.jpeg");
+	min-height: 400px;
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section_light{
+	background-color: #f4f4f4;
+}
+
+.section_dark{
+	background-color: #282e34;
+	color: #ddd;
+
+}
+
+.p_text{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.border{
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+}
+
+ .trans{
+	background-color: transparent;
+	color: #fff;
+	padding: 20px;
+}
