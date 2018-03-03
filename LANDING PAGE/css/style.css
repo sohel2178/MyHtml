@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-size: 17px;
+	color: #926239;
+	line-height: 1.6;
+}
+
+
+#showcase{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /*It does vertically Center Alignment*/
+	align-items: center;   /*It does Horizontally Center Align ment*/
+	background-image: url("../images/landing.jpeg");
+
+
+	/*width: 100vw;*/
+  	height: 100vh;
+
+  	text-align: center;
+
+  	background-size: cover;
+  	background-position: center;
+
+  	padding: 0px 20px;
+}
+
+
+#showcase h1{
+	font-size: 50px;
+}
+
+#showcase p{
+	font-size: 20px;
+}
+
+
+#showcase .button{
+	font-size: 18px;
+	text-decoration: none;
+	color: #926239;
+
+	border: 1px solid #926239;
+	padding: 10px 20px;
+	border-radius: 10px;
+
+	margin-top: 20px;
+}
+
+
+@media(max-width: 768px){
+
+	body{
+		line-height: 1;
+	}
+
+	#showcase h1{
+		font-size: 30px;
+	}
+
+	#showcase p1{
+		font-size: 12px;
+	}
+
+	#showcase .button{
+		font-size: 12px;
+	}
+
+}
