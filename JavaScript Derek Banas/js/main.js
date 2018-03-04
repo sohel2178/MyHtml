@@ -124,4 +124,12 @@ function SecretCode(){
 
 var secretCode = new SecretCode();
 
-document.write("Secret Code is "+secretCode.guessNumber(70)+"<br>");
+document.write("Secret Code is "+secretCode.guessNumber(78)+"<br>");
+
+SecretCode.prototype.getSecretNumber = function(){
+	return this.secterNumber;
+}
+
+
+document.write("Secret Code is "+secretCode.getSecretNumber()+"<br>");
+
